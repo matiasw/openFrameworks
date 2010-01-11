@@ -8,6 +8,8 @@ openFrameworksDebug.a
 openFrameworksUniversal.a
 *.app/
 
+.DS_Store
+
 #eclipse build folders
 #Mac OS X
 addons/Debug Mac OS X
