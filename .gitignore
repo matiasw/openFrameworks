@@ -9,6 +9,7 @@ openFrameworksUniversal.a
 *.app/
 
 .DS_Store
+.svn
 
 #eclipse build folders
 #Mac OS X
