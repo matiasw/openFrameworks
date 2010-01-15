@@ -1,0 +1,80 @@
+<install>
+	<author>elie zananiri + eloi maduell . 2008 </author>
+	<version>0.01</version>
+	
+	<add>	
+
+		<!-- 	=====================================================================	-->
+		<!--	========================== add for the "installation" of OF =========	-->
+		<!-- 	=====================================================================	-->
+
+	<addons_h>
+
+    //-------------------------------------------- xml settings
+    #ifdef OF_ADDON_USING_OFXFREEFRAME
+        #include "ofxFreeFrame.h"
+    #endif
+
+	</addons_h>
+	
+	
+	
+	<!-- ========================================================================= 	-->
+	<!--	setting per project 							-->
+	<!-- ========================================================================= 	-->
+	
+	<file>
+		<folder name="addons/ofxFreeFrame/src">
+			<file>../../../addons/ofxFreeFrame/file/ofxFreeFrame.h</file>
+			<file>../../../addons/ofxFreeFrame/file/ofxFFGLPlugin.cpp</file>
+			<file>../../../addons/ofxFreeFrame/file/ofxFFGLPlugin.h</file>
+			<file>../../../addons/ofxFreeFrame/file/ofxFFGLHost.cpp</file>
+			<file>../../../addons/ofxFreeFrame/file/ofxFFGLHost.h</file>
+		</folder>
+
+		<folder name="addons/ofxFreeFrame/lib/common">
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGL.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGLLib.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/Freeframe.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/Timer.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFDebugMessage.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGLExtensions.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGLExtensions.cpp</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGLFBO.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGLFBO.cpp</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGLPluginInstance.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGLPluginInstance.cpp</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGLShader.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/common/FFGLShader.cpp</file>
+		</folder>
+
+		<folder name="addons/ofxFreeFrame/lib/win32">
+			<file>../../../addons/ofxFreeFrame/lib/win32/WinDebugMessage.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/win32/WinPluginInstance.h</file>
+			<file>../../../addons/ofxFreeFrame/lib/win32/WinTimer.h</file>
+		</folder>
+        
+        <folder name="addons/ofxFreeFrame/lib/osx">
+			<file>../../../addons/ofxFreeFrame/lib/osx/OSXDebugMessage.cpp</file>
+			<file>../../../addons/ofxFreeFrame/lib/osx/OSXPluginInstance.cpp</file>
+			<file>../../../addons/ofxFreeFrame/lib/osx/OSXTimer.cpp</file>
+		</folder>	
+        
+        <folder name="addons/ofxFreeFrame/lib/Linux">
+			<file>../../../addons/ofxFreeFrame/lib/Linux/LinuxDebugMessage.cpp</file>
+			<file>../../../addons/ofxFreeFrame/lib/Linux/LinuxPluginInstance.cpp</file>
+			<file>../../../addons/ofxFreeFrame/lib/Linux/LinuxTimer.cpp</file>
+		</folder>	
+
+	</file>
+
+	<include>
+		<path>../../../addons/ofxFreeFrame/src</path>
+		<path>../../../addons/ofxFreeFrame/lib/common</path>
+		<path>../../../addons/ofxFreeFrame/lib/win32</path>
+		<path>../../../addons/ofxFreeFrame/lib/osx</path>
+        <path>../../../addons/ofxFreeFrame/lib/Linux</path>
+	</include>
+
+	</add>				
+</install>
